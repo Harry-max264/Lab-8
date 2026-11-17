@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Retrieval-augmented generation (RAG) with a large language model over internal authoritative documents",
+  "organization": "Fictional mid-sized industrial manufacturer with SAP Ariba and Jira Service Management Cloud",
+  "industry_sector": "Industrial manufacturing",
+  "time_horizon": "90 days",
+  "intended_application": "Employee self-service for routine purchase requisition policy and how-to questions with direct citations",
+  "business_need": "Reduce time spent searching for current instructions and responding to repetitive questions",
+  "users_stakeholders": "Requesters, procurement operations, policy owners and IT security",
+  "adoption_posture": "Moderate fast follower",
+  "capabilities_constraints": "Versioned policies and procurement help desk are available. SAP Ariba is installed. Joule entitlement, permissions, local policy coverage and cost are unverified. Procurement can build a bilingual evaluation set.",
+  "risk_consequence_context": "Wrong answers could direct employees to the wrong approval path. Human policy owners retain authority for approvals and exceptions. Read-only pilot.",
+  "management_question": "Should procurement evaluate RAG against curated policy search and a help desk, and when should it reconsider a platform-native option?",
+  "additional_context": "Synthetic classroom scenario. VP of Procurement owns the pilot. Check English and Mandarin questions. Use evidence snapshot dated 2026-11-16."
+}

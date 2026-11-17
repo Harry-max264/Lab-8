@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Retrieval-augmented generation (RAG) with a large language model over internal authoritative documents",
+  "organization": "Fictional mid-sized industrial manufacturer with SAP Ariba and Jira Service Management Cloud",
+  "industry_sector": "Industrial manufacturing",
+  "time_horizon": "90 days",
+  "intended_application": "Analyst-facing first-pass triage of suspected production IT outages using current runbooks",
+  "business_need": "Reduce time from an alert to a correct human escalation",
+  "users_stakeholders": "Service desk, on-call infrastructure team, incident commanders and production teams",
+  "adoption_posture": "Conservative for production continuity",
+  "capabilities_constraints": "Jira Service Management Cloud and approved escalation rules are available. Runbook version consistency, access isolation and Jira AI entitlements are unverified. Historical incidents can be redacted for replay.",
+  "risk_consequence_context": "Delayed escalation can extend downtime. No end-user or automated remediation. Incident commanders keep severity and dispatch authority.",
+  "management_question": "Should the service desk change the live routing path, or restrict the technology to shadow-mode incident replay?",
+  "additional_context": "Synthetic classroom scenario. Service operations manager owns evaluation with the incident commander. Use evidence snapshot dated 2026-11-16."
+}

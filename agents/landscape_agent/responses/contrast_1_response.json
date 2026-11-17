@@ -1,0 +1,26 @@
+{
+  "agent": {"name": "Emerging Technology Landscape Agent", "specialty": "Technology landscape and monitoring", "version": "1.0.0"},
+  "analytical_question": "Where does internal-document RAG stand for production outage triage, and what would justify reassessing its role in 90 days?",
+  "general_et_finding": "As of 2026-11-16, retrieval-backed generation is commercially implemented for knowledge assistance. It can summarize linked material and surface source links. Accuracy and citation faithfulness remain deployment-dependent, and tested retrieval-backed tools can still hallucinate. Product capability, target-tenant readiness and credible performance evidence require separate checks.",
+  "application_finding": "Position: shadow evaluation for analyst support. Approved severity rules and human dispatch are the strongest baseline for outages. RAG could surface a current runbook excerpt in an analyst view. Jira Service Management controlled flows are a complementary route for structured information gathering. Compare by time to correct escalation, critical under-triage and approved runbook retrieval. Generic customer-support productivity has limited relevance to incident safety.",
+  "organization_specific_finding": "The leading signal is whether suggestions ever suppress or delay critical escalation, including under stale runbooks and restricted access. The manufacturer's production continuity risk favors keeping current rules and human dispatch live while analysts replay historical incidents. Verify role-bound access, runbook revision handling and vendor configuration in a sandbox.",
+  "evidence": [
+    {"claim": "Atlassian documents connected knowledge responses and separate controlled intent flows for routing and information gathering.", "source_or_reference": "https://support.atlassian.com/jira-service-management-cloud/docs/about-the-virtual-agent/", "date_or_recency": "Undated live documentation, reviewed 2026-11-16", "evidence_type": "Vendor documentation", "notes": "Supports capability comparison. Production incident safety remains untested here."},
+    {"claim": "Tested retrieval-backed legal research assistants still produced hallucinations.", "source_or_reference": "https://dho.stanford.edu/wp-content/uploads/Legal_RAG_Hallucinations.pdf", "date_or_recency": "2025 journal article", "evidence_type": "Independent empirical evaluation", "notes": "Supports testing for misleading summaries without importing a legal error rate."},
+    {"claim": "NIST identifies confabulation and recommends contextual evaluation and monitoring.", "source_or_reference": "https://doi.org/10.6028/NIST.AI.600-1", "date_or_recency": "July 2024", "evidence_type": "Government guidance", "notes": "Sections 2.2 and MG-2.2 inform replay and human control."}
+  ],
+  "contrary_evidence_or_limitations": [
+    "Hype-sensitive claim: cited Jira AI answers make critical incident triage safe. Atlassian describes linked knowledge summaries and controlled intent flows. Recheck coverage, permissions and fallback via target-tenant sandbox replay after releases.",
+    "Redacted historical incidents may miss rare live failure modes and concurrent alerts. Tenant cost and incremental support effort remain unknown."
+  ],
+  "confidence_and_uncertainty": "High confidence that the supplied evidence supports keeping live dispatch human-controlled. Low confidence in speed gains or rare-event safety before replay. Numerical gates below are proposed management assumptions.",
+  "value_opportunity_implication": "Runbook retrieval may shorten analyst lookup. Measure time to correct escalation against the existing rules-plus-human baseline with the same replayed cases.",
+  "risk_governance_implication": "Run the analysis in shadow mode. Keep severity, paging and remediation under the incident commander. Escalate ambiguous or missing runbook evidence via the approved live process.",
+  "recommendation_management_implication": "Replay at least 30 redacted incidents including at least 10 critical cases and seeded stale, conflicting and inaccessible runbooks. Score the same incidents under both workflows. Keep current live escalation rules throughout the 90-day review.",
+  "change_monitoring_triggers": [
+    "The incident commander reviews outcomes weekly. Any critical under-triage, recommendation that delays mandatory paging, or unauthorized runbook exposure triggers suspension and remediation of the shadow test.",
+    "The service operations manager reviews results after 30 matched replays. Consider an analyst-only advisory trial if there are zero critical misses, zero unauthorized disclosures and median time to a correct escalation improves by at least 15% against baseline. Human dispatch remains authoritative.",
+    "The Jira administrator checks monthly and after feature or permission changes. Rerun access and fallback tests when linked knowledge access, intent routing or human handoff behavior changes."
+  ],
+  "abstention_or_more_information_needed": ["Require incident commander validation of severity labels and site-specific escalation rules.", "Require broader critical-event coverage and access-control evidence before recommending any live routing change."]
+}

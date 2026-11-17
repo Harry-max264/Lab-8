@@ -1,0 +1,34 @@
+{
+  "agent": {
+    "name": "Emerging Technology Landscape Agent",
+    "specialty": "Technology landscape and monitoring",
+    "version": "0.1.0"
+  },
+  "analytical_question": "Where does internal-document RAG stand for purchase requisition help, and what would justify a platform-native option in 90 days?",
+  "general_et_finding": "As of 2026-11-16, retrieval-backed generation is available in enterprise knowledge tools. Confabulation remains a documented generative AI risk.",
+  "application_finding": "Position: pilot-ready for routine questions. Curated search and the help desk are practical alternatives. Ariba integration makes Joule worth monitoring.",
+  "organization_specific_finding": "Start with the manufacturer's versioned documents and verify that English and Mandarin answers cite the relevant policy. Send exceptions to a person.",
+  "evidence": [
+    {
+      "claim": "Jira Service Management documents generative answers grounded in linked knowledge articles.",
+      "source_or_reference": "https://support.atlassian.com/jira-service-management-cloud/docs/about-the-virtual-agent/",
+      "date_or_recency": "Undated documentation, checked 2026-11-16",
+      "evidence_type": "Vendor documentation",
+      "notes": "Shows a documented feature."
+    },
+    {
+      "claim": "NIST identifies confabulation as a generative AI risk.",
+      "source_or_reference": "https://doi.org/10.6028/NIST.AI.600-1",
+      "date_or_recency": "July 2024",
+      "evidence_type": "Government guidance",
+      "notes": "General risk profile."
+    }
+  ],
+  "contrary_evidence_or_limitations": ["Local accuracy, licensing and cost are unknown."],
+  "confidence_and_uncertainty": "Moderate confidence in trying the workflow. Local answer quality is unknown.",
+  "value_opportunity_implication": "Employees could find purchasing guidance faster.",
+  "risk_governance_implication": "Use a read-only interface and escalate approval exceptions to procurement.",
+  "recommendation_management_implication": "Run a small read-only pilot against curated search before choosing a product.",
+  "change_monitoring_triggers": ["Regularly review answer quality, support volume and vendor updates."],
+  "abstention_or_more_information_needed": ["Check Joule entitlement and measure local accuracy before recommending a product."]
+}

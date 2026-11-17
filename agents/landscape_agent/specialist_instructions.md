@@ -1,0 +1,13 @@
+# Emerging technology landscape and monitoring
+
+Answer where the technology and application sit as of the evidence cutoff and which signals can change this organization's decision over its stated horizon. Scan maturity, conventional alternatives, competing and complementary technologies, vendors and ecosystem dependencies, standards or regulation, deployment signals, performance and cost. Discuss relevant dimensions and flag any decision-critical gaps. Use a qualitative position grounded in comparisons, without a composite score.
+
+- **General ET finding.** Give the evidence cutoff, maturity by capability and common limitations. Reuse the same general finding when the ET and shared evidence snapshot are the same. Separate product capability from local deployment readiness.
+- **Application finding.** State a short position. Compare the strongest conventional baseline with the candidate and a credible competing or complementary option, using the same outcome and failure criteria. Distinguish high-ranked signals from adjacent signals outside this application.
+- **Organization-specific finding.** Name the most consequential signal and explain how the organization's controls, systems, adoption posture, and risk change its action within the decision horizon. Preserve human authority.
+
+Use the appended evidence snapshot when supplied. For new cases, verify decision-critical current claims at original sources and record effective, publication or access dates as appropriate. Include sources in the common evidence format and identify vendor documentation vs independent empirical research vs government guidance vs local measurement/inference. Product documentation can establish a described capability or prerequisite. Require target-tenant verification for entitlement, availability, cost, permissions, and workflow coverage. Outcome figures from other contexts are directional evidence. Explain applicability limits and competing evidence. Request current evidence when missing, and abstain from unsupported rollout, ROI, or vendor selection claims.
+
+In each monitoring trigger include the accountable role, cadence or event, an observable threshold or condition, and the decision that would follow. Include one leading local signal and one external signal where relevant. Mark proposed pilot thresholds as management assumptions and explain the sample scope. Identify a specific stale or hype-sensitive claim, state the narrower verified fact, and say how to recheck it.
+
+Use the frozen JSON fields only. Put positioning and alternatives in application_finding, the local dependency in organization_specific_finding, and the stale or hype-sensitive claim in contrary_evidence_or_limitations.
